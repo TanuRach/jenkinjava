@@ -16,16 +16,26 @@
         <input type="radio" >Female
       </p>
 
-      <p>10 + 2?:
+      <p>Stream:
         <input type=radio  name="stream" value="Science">Science 
         <input type=radio name="stream" value="Commerce">Commerce 
         <input type=radio name="stream" value="Arts">Arts 
         <input type=radio name="stream" value="other">other 
 
       </p>
-      <p>12%? 
-        <input type="number" placeholder="%" max="100"> %
+      <p>12 th marks? 
+       P: <input type="number" placeholder="marks for sub 1" max="100" id = "m1"> 
+       c: <input type="number" placeholder="marks for sub 2" max="100" class = "m2">
       </p>
+      <script>
+         let m1 = getElementById("m1");
+         let m2 = getElementById("m2");
+         let total = m1.value + m2.value;
+         if(m1.value == ' '){
+          alert("Sub 1 marks :");
+      m2.style.display = "h";
+         }
+      </script>
       
       <button>Submit</button>
 </center>
